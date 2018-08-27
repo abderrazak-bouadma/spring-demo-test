@@ -25,7 +25,7 @@ node {
    }
 
    stage('deploy') {
-       sh "sshpass -p 'Jwkry_6w!i}j?34U' scp -o StrictHostKeyChecking=no *.jar LzmP894N8Q@13.81.30.169:/tmp"
+       sh "sshpass -p 'Jwkry_6w!i}j?34U' scp -o StrictHostKeyChecking=no target/*.jar LzmP894N8Q@13.81.30.169:/tmp"
        //sh "echo \"greetings from jenkins\" > hello.txt"
        //sh "sshpass -p 'Jwkry_6w!i}j?34U' scp -o StrictHostKeyChecking=no hello.txt LzmP894N8Q@13.81.30.169:/tmp"
    }
