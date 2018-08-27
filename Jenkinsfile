@@ -26,7 +26,6 @@ node {
 
    stage('deploy') {
        // sh "sshpass -p 'Jwkry_6w!i}j?34U' scp demo-0.0.1-SNAPSHOT.jar LzmP894N8Q@13.81.30.169:/tmp"
-       pwd
        ssh "echo \"greetings\" > hello.txt"
    }
 }
