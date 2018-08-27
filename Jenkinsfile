@@ -27,6 +27,6 @@ node {
    stage('deploy') {
        // sh "sshpass -p 'Jwkry_6w!i}j?34U' scp demo-0.0.1-SNAPSHOT.jar LzmP894N8Q@13.81.30.169:/tmp"
        sh "echo \"greetings\" > hello.txt"
-       sh "sshpass -p 'Jwkry_6w!i}j?34U' scp hello.txt LzmP894N8Q@13.81.30.169:/tmp"
+       sh "sshpass -o StrictHostKeyChecking=no -p 'Jwkry_6w!i}j?34U' scp hello.txt LzmP894N8Q@13.81.30.169:/tmp"
    }
 }
